@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: block;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Elegant blue to pink gradient */
+    color: #333;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+#header {
+    display: flex;
+    height: 60px; /* Height of the header */
+    background-color: rgba(242, 242, 242, 0.8); /* Light gray with 80% opacity */
+    padding: 15px 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+    color: #333; 
+    position: sticky;
+    top: 0;
+    margin-top: 30px; 
+    margin-bottom: 80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* Burger icon styling */
+.burger-icon {
+    font-size: 30px; 
+    color: #333; 
+    cursor: pointer; /* Indicates it's clickable */
+    transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+
+#header-img, #nav-bar {
+    display: none;
+}
+
+h4, .item-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#about-us p {
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.1rem;
+}
+
+#about-us, .product-align {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+   }
+
+#video {
+    text-align: center;
+    padding: 80px;
+}
+
+
+#products {
+    max-width: 80%;
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    /* max-width: 500px;
+    max-height: 600px; */
+    color: black;
+    padding: 1rem;
+    height: auto;
+    border: 1px solid gray;
+    background-color: peachpuff;
+    margin-top: 0;
+}
+
+.product-image {
+    width:60%;
+    margin-inline: auto;
+    display: block;
+}
+
+.item-name {
+    text-align: center;
+}
+
+.description {
+    padding-left: 16px;
+}
+
+button {
+    background-color: darkgray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: auto;
+    align-self: center;
+}
+
+
+/* Form container */
+#form {
+    background-color: #f4f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Adjusted width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    border: 2px solid #4CAF50; 
+}
+
+/* Title styling */
+#form p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: darkgreen;
+
+}
+
+/* Label styling */
+#email-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input fields */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Focused input field border color */
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 5%;
+    background-color: #f5f5f5;
+    padding: 10px 20px; 
+    text-align: center;
+    display: block;
+    width: 100%; 
+    color: #333; 
+    font-size: 0.9rem; 
+    border: 1px solid blue; 
+    border-radius: 10px;
+
+}
+
+/* Footer title */
+footer p {
+    margin: 0; 
+    font-size: 1rem; 
+    font-weight: normal; 
+}
+
+/* Links container inside footer */
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 5px; 
+}
+
+/* Styling for each link */
+footer span a {
+    color: #333; 
+    text-decoration: none; 
+    font-size: 1.3rem; 
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the links */
+footer span a:hover {
+    color: #4CAF50; /* Green color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+/* keep this last */
+@media only screen and (min-width: 768px) {
+    #header-img {
+        display: block;
+        max-width: 200px;
+        height: auto;
+        padding-left: 150px;
+    }
+
+    #nav-bar {
+        display: flex;
+        gap: 10px;
+        padding-right: 200px;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    #header p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
