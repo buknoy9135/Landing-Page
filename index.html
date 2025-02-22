@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div id="header">
         <!-- left side of header -->
         <div class="left">
@@ -20,14 +21,16 @@
 
         <!-- right side of header -->
         <div id="nav-bar">
-            <!-- <div class="nav-link"> -->
+            <div class="nav-link">
                 <a href="#about-us">About Us</a>
                 <a href="#products">Products</a>
                 <a href="#form">Contact Us</a>
                 <a href="#social-media">Social Media</a>
-            <!-- </div> -->
+            </div>
         </div>
     </div>
+
+
 
     <div id="about-us">
         <h2>ABOUT US</h2>
@@ -37,8 +40,10 @@
     </div>
 
     <!-- embed video -->
-    <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4-ujyNLnm0k?si=lrVA1ihHehexpU9-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-wrapper">
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4-ujyNLnm0k?si=lrVA1ihHehexpU9-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!-- product line -->
@@ -224,34 +229,36 @@
                 <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
         </div>
-
-    <div id="form">            
-        <form method="get" class="container">
-            <p>Subscribe to our newsletter for updates:</p>
-            <label for="email" id="email-label">Email Adress:</label>
-            <input type="email" id="email" name="email" required placeholder="ex: johndoe@email.com" />            
-            <input type="submit" id="submit" value="Submit" />
-        </form>
+    <div class="form-wrapper">
+        <div id="form">            
+            <form method="get" class="container">
+                <p>Subscribe to our newsletter for updates:</p>
+                <label for="email" id="email-label">Email Adress:</label>
+                <input type="email" id="email" name="email" required placeholder="ex: johndoe@email.com" />            
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </div>
     </div>
 
-    <footer id="social-media">
-        Follow Us
-        <div class="links">
-            <span>
-                <a href="https://www.facebook.com/GIGABYTEofficial/" target="_blank"> <i class="fa-brands fa-facebook"></i> Facebook </a>
-            </span>
+    <div class="footer-wrapper">
+        <footer id="social-media">
+            Follow Us
+            <div class="links">
+                <span>
+                    <a href="https://www.facebook.com/GIGABYTEofficial/" target="_blank"> <i class="fa-brands fa-facebook"></i> Facebook </a>
+                </span>
 
-            <span>
-                <a href="https://www.instagram.com/gigabyte_official/" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram</a>
-            </span>
+                <span>
+                    <a href="https://www.instagram.com/gigabyte_official/" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                </span>
 
-            <span>
-                <a href="https://www.linkedin.com/company/gigabyte/" target="_blank"><i class="fa-brands fa-linkedin"></i>
-                    LinkedIn</a>
-            </span>
-        </div>
-        2024 All rights reserved.
-    </footer>   
-
+                <span>
+                    <a href="https://www.linkedin.com/company/gigabyte/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                        LinkedIn</a>
+                </span>
+            </div>
+            2024 All rights reserved.
+        </footer>   
+    </div>
 </body>
 </html>

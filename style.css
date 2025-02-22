@@ -30,6 +30,8 @@ body {
     border-radius: 10px;
 }
 
+
+
 /* Burger icon styling */
 .burger-icon {
     font-size: 30px; 
@@ -41,6 +43,13 @@ body {
 
 #header-img, #nav-bar {
     display: none;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (optional) */
+    width: 100%;
 }
 
 h4, .item-name {
@@ -101,7 +110,7 @@ h4, .item-name {
 }
 
 .description {
-    padding-left: 16px;
+    padding-inline: auto;
 }
 
 button {
@@ -116,9 +125,17 @@ button {
     align-self: center;
 }
 
+/* Form Wrapper */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (optional) */
+    width: 100%;
+}
 
 /* Form container */
-#form {
+#form {    
     background-color: #f4f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -181,13 +198,20 @@ input[type="submit"]:hover {
     background-color: #45a049; /* Slightly darker green on hover */
 }
 
+.footer-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (optional) */
+    width: 100%; 
+}
+
 /* Footer styling */
 footer {
     margin-top: 5%;
     background-color: #f5f5f5;
     padding: 10px 20px; 
     text-align: center;
-    display: block;
+    display: block;   
     width: 100%; 
     color: #333; 
     font-size: 0.9rem; 
@@ -228,17 +252,32 @@ footer span a:hover {
 
 /* keep this last */
 @media only screen and (min-width: 768px) {
+    
+    .left {
+        width: 50%;
+        justify-content: left;
+    }
+
     #header-img {
         display: block;
         max-width: 200px;
         height: auto;
-        padding-left: 150px;
+        justify-content: left;
+        padding-left: 20%;
     }
 
     #nav-bar {
         display: flex;
         gap: 10px;
-        padding-right: 200px;
+        padding-right: 11%;
+        width: 50%;
+        justify-content: right;
+    }
+
+    
+
+    #nav-bar a {
+        text-decoration: none;
     }
 
     .burger-icon {
