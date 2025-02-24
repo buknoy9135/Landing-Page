@@ -333,4 +333,16 @@ footer span a:hover {
         width: 70%;
         justify-content: right;        
     } 
+
+    .video-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video iframe {
+        width: 800px;
+        height: 600px;
+        
+    }
 }
