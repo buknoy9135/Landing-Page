@@ -309,6 +309,18 @@ footer span a:hover {
     #products {
         grid-template-columns: 1fr 1fr;
     }
+
+    .video-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video iframe {
+        width: 640px;
+        height: 480px;
+        
+    }
 }
 
 
