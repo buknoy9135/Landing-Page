@@ -12,11 +12,15 @@ body {
     background-attachment: fixed;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 /* Header Styling */
 #header {
     display: flex;
-    height: 60px; /* Height of the header */
-    background-color: rgba(242, 242, 242, 0.8); /* Light gray with 80% opacity */
+    height: 40px; /* Height of the header */
+    background-color: rgba(242, 242, 242, 0.9); /* Light gray with 80% opacity */
     padding: 15px 15px;
     width: 100%;
     align-items: center;
@@ -28,6 +32,13 @@ body {
     margin-bottom: 80px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    gap: 10px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -149,7 +160,7 @@ button {
 
 /* Title styling */
 #form p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
@@ -214,7 +225,7 @@ footer {
     display: block;   
     width: 100%; 
     color: #333; 
-    font-size: 0.9rem; 
+    font-size: 0.8rem; 
     border: 1px solid blue; 
     border-radius: 10px;
 
@@ -251,8 +262,8 @@ footer span a:hover {
 
 
 /* keep this last */
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 768px) {   
+   
     .left {
         width: 50%;
         justify-content: left;
@@ -263,23 +274,25 @@ footer span a:hover {
         max-width: 200px;
         height: auto;
         justify-content: left;
-        padding-left: 20%;
+        padding-left: 5%;
     }
+    
 
     #nav-bar {
         display: flex;
         gap: 10px;
-        padding-right: 11%;
+        padding-right: 5%;
         width: 50%;
-        justify-content: right;
-    }
-
-    
+        justify-content: right;        
+    } 
 
     #nav-bar a {
-        text-decoration: none;
+        text-decoration: underline; 
+        text-align: center; 
+            
     }
 
+   
     .burger-icon {
         display: none;
     }
@@ -289,7 +302,7 @@ footer span a:hover {
         text-decoration: underline;
     }
 
-    .products {
+    #products {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -298,4 +311,21 @@ footer span a:hover {
     #products {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #header-img {
+        display: block;
+        max-width: 200px;
+        height: auto;
+        justify-content: left;
+        padding-left: 25%;
+    }
+    
+
+    #nav-bar {
+        display: flex;
+        gap: 10px;
+        padding-right: 11%;
+        width: 70%;
+        justify-content: right;        
+    } 
 }
