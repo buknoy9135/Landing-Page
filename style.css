@@ -12,6 +12,7 @@ body {
     background-attachment: fixed;
 }
 
+/* Gap on top of each header link */
 html {
     scroll-padding-top: 80px;
 }
@@ -42,7 +43,6 @@ html {
 }
 
 
-
 /* Burger icon styling */
 .burger-icon {
     font-size: 30px; 
@@ -54,13 +54,6 @@ html {
 
 #header-img, #nav-bar {
     display: none;
-}
-
-.video-wrapper {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically (optional) */
-    width: 100%;
 }
 
 h4, .item-name {
@@ -82,12 +75,21 @@ h4, .item-name {
     font-size: 1.5rem;
    }
 
+/* Video */
+.video-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (optional) */
+    width: 100%;
+    
+}
+
 #video {
     text-align: center;
     padding: 80px;
 }
 
-
+/* Products Listing */
 #products {
     max-width: 80%;
     display: grid;
@@ -124,6 +126,7 @@ h4, .item-name {
     padding-inline: auto;
 }
 
+/* Add to cart button */
 button {
     background-color: darkgray;
     color: white;
@@ -261,7 +264,8 @@ footer span a:hover {
 }
 
 
-/* keep this last */
+/* Media Query */
+
 @media only screen and (min-width: 768px) {   
    
     .left {
@@ -306,6 +310,7 @@ footer span a:hover {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 
 @media only screen and (min-width: 1024px) {
     #products {
