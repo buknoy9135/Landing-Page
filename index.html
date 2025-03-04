@@ -67,7 +67,7 @@
                         <li>4 Years Warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -86,7 +86,7 @@
                         <li>4 Years Warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -107,7 +107,7 @@
                         <li>4 years warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -126,7 +126,7 @@
                         <li>4 Years Warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -148,7 +148,7 @@
                         <li>4 Years Warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -168,7 +168,7 @@
                         <li>Anti-sag bracket</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -189,7 +189,7 @@
                         <li>4 years warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -208,7 +208,7 @@
                         <li>4 Years Warranty (Online registration required)</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
 
             <div class="item">
@@ -226,7 +226,7 @@
                         <li>Protection metal back plate</li>
                     </ul>
                 </div>
-                <p><button>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
+                <p><button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button></p>
             </div>
         </div>
 
@@ -263,5 +263,19 @@
             2024 All rights reserved.
         </footer>   
     </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            // Get all buttons with the class 'add-to-cart'
+            const buttons = document.querySelectorAll(".add-to-cart");
+            
+            // Add event listener to each button
+            buttons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    alert("Item added to cart!");
+                });
+            });
+        };
+    </script>
 </body>
 </html>
