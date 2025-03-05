@@ -277,5 +277,20 @@
             });
         };
     </script>
+
+    <script>
+        console.log("Inline script loaded");
+
+        const form = document.getElementById("form");
+
+        if (form) {
+            console.log("Form found and event listener added");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                console.log("Form submission prevented");
+                alert("Form submitted successfully!");
+            });
+        }
+    </script>
 </body>
 </html>

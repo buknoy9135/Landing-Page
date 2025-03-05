@@ -26,8 +26,10 @@ aboutUs[0].style.textShadow = "2px 2px 5px white";
 document.querySelector(".burger-icon").style.color = "grey";
 console.log(querySelector(".burger-icon"));
 
+// Add to cart addEventListener
 // document.querySelectorAll(".add-to-cart").forEach(button => {
 //     button.addEventListener("click", () => {
 //         alert("Item added to cart!");
 //     });
 // });
+
